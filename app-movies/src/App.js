@@ -2,7 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 
 import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
 import { Component } from 'react';
+import Routes from './routes';
 
 class App extends Component {
   render() {
@@ -10,15 +12,9 @@ class App extends Component {
       
       <div className="App">
         <Header />
-        <article className="App-article">
-          <i class="fas fa-film fa-5x"></i>
-          <p>
-          The magic of Cinema!
-          </p>
-          <p>
-          Memorable movie cards
-          </p>
-        </article>
+        <Routes />
+        
+        <Footer />
       </div>
     );
   }
